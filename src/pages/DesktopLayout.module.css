@@ -1,0 +1,22 @@
+.headerContainer {
+  height: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+.mainContainer {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.footerContainer {
+  height: 23rem;
+  padding: 3rem 6rem 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+}
