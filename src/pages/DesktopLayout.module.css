@@ -1,22 +1,60 @@
 .headerContainer {
-  height: 6rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  height: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
 }
 
-.mainContainer {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.nav p {
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+}
+
+.pageContainer {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .footerContainer {
   height: 23rem;
-  padding: 3rem 6rem 2rem 6rem;
+  padding: 3rem 10rem 2rem 10rem;
   display: flex;
   justify-content: space-between;
   background-color: #101010;
+}
+
+.info p {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 80%;
+}
+
+.footerRhs {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.smIcons {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+  justify-self: flex-end;
 }

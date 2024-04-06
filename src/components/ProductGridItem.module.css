@@ -1,0 +1,53 @@
+.background {
+  width: 100%;
+  height: 13rem;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+}
+
+.productGridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.productGridItem > img {
+  height: 14rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  top: -5rem;
+}
+
+.productGridItem > p {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  top: -7rem;
+  margin-bottom: 1.5rem;
+}
+
+.shop {
+  position: relative;
+  top: -7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.shop p {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  color: #000;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.shop img {
+  width: 5px;
+  height: 10px;
+}
