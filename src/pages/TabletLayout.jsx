@@ -9,9 +9,12 @@ import facebookIcon from "/assets/shared/desktop/icon-facebook.svg";
 import twitterIcon from "/assets/shared/desktop/icon-twitter.svg";
 import instagramIcon from "/assets/shared/desktop/icon-instagram.svg";
 import CartModal from "../components/CartModal";
+import CategoryCards from "../components/CategoryCards";
+import Menu from "../components/Menu";
 
 const TabletLayout = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const navigate = useNavigate();
 
@@ -19,13 +22,14 @@ const TabletLayout = () => {
   return (
     <div style={{ backgroundColor: page === "/checkout" ? "#f1f1f1" : "#fff" }}>
       <CartModal openModal={showModal} closeModal={() => setShowModal(false)} />
-
+      <Menu openMenu={showMenu} closeMenu={() => setShowMenu(false)} />
       <header className={styles.headerContainer}>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
           <img
             src={hamburgerImg}
             alt="Menu Icon"
             style={{ cursor: "pointer" }}
+            onClick={() => setShowMenu((prev) => !prev)}
           />
           <img src={logo} alt="Audiophile logo" />
         </div>

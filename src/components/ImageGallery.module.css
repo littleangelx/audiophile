@@ -1,11 +1,17 @@
 .galleryImages {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  gap: 1rem;
   margin-bottom: 10rem;
+  justify-content: center;
 }
 
 .galleryImages img {
   border: none;
   border-radius: 0.5rem;
+}
+
+.galleryColumnImages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }

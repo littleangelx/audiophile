@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useMediaQuery } from "react-responsive";
 
 import cashOnDeliveryImg from "/assets/checkout/icon-cash-on-delivery.svg";
 import datajson from "../assets/data.json";
@@ -18,6 +19,8 @@ const Checkout = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const [isEMoney, setIsEMoney] = useState(false);
 
@@ -50,14 +53,7 @@ const Checkout = () => {
         grandTotal={total + 50}
       />
       <div className={styles.greyPageContainer}>
-        <div
-          style={{
-            cursor: "pointer",
-            marginTop: "5rem",
-            marginBottom: "2.5rem",
-          }}
-          onClick={() => navigate(-1)}
-        >
+        <div className={styles.goBack} onClick={() => navigate(-1)}>
           Go Back
         </div>
         <div className={styles.checkoutPageContainer}>
@@ -215,6 +211,7 @@ const Checkout = () => {
               <div
                 style={{
                   display: "flex",
+                  flexDirection: isMobile ? "column" : "row",
                   justifyContent: "space-between",
                   alignItems: "flex-start",
                 }}
@@ -222,10 +219,11 @@ const Checkout = () => {
                 <label>Payment Method</label>
                 <div
                   style={{
-                    width: "50%",
+                    width: isMobile ? "100%" : "50%",
                     display: "flex",
                     flexDirection: "column",
                     gap: "0.75rem",
+                    marginTop: isMobile ? "1rem" : "0",
                     marginBottom: "1.5rem",
                   }}
                 >
@@ -267,7 +265,10 @@ const Checkout = () => {
                 </div>
               ) : (
                 <div style={{ display: "flex", gap: "2rem" }}>
-                  <img src={cashOnDeliveryImg} />
+                  <img
+                    src={cashOnDeliveryImg}
+                    style={{ alignSelf: "center" }}
+                  />
                   <p className={styles.cashText}>
                     The 'Cash on Delivery' option enables you to pay in cash
                     when our delivery courier arrives at your residence. Just

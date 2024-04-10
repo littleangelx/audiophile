@@ -1,14 +1,25 @@
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import styles from "./ProductGridItem.module.css";
 import arrowRight from "/assets/shared/desktop/icon-arrow-right.svg";
 
-const ProductGridItem = ({ image, title }) => {
+const ProductGridItem = ({ isMenu, image, title }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   const navigate = useNavigate();
+
   return (
-    <div className={styles.background}>
+    <div
+      className={styles.background}
+      style={{ height: isMobile && isMenu ? "10rem" : "13rem" }}
+    >
       <div className={styles.productGridItem}>
-        <img src={image} alt="Product image" />
+        <img
+          src={image}
+          alt="Product image"
+          style={{ width: isMobile && isMenu ? "70%" : "100%" }}
+        />
         <p>{title}</p>
         <div
           className={styles.shop}

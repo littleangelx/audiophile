@@ -10,6 +10,20 @@
   padding: 1.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1223px) {
+  .modal {
+    left: calc(100vw - 26rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.7);
 }

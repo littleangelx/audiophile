@@ -1,5 +1,5 @@
 .gridItemsSection {
   display: grid;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+
+  background-color: #fff;
 }

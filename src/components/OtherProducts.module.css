@@ -1,4 +1,5 @@
 .otherProductsContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -21,6 +22,17 @@
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .otherProducts {
+    flex-direction: column;
+  }
+
+  .otherProduct {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .otherProduct {
   display: flex;
   flex-direction: column;
@@ -30,7 +42,7 @@
 }
 
 .otherProduct img {
-  width: 22rem;
+  width: 100%;
 }
 
 .otherProduct h4 {

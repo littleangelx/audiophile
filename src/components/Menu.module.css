@@ -1,0 +1,12 @@
+.menu {
+  width: 100dvw;
+  position: absolute;
+  padding: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6rem;
+}
+
+.menu::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

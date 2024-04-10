@@ -41,7 +41,15 @@ const ProductDetailLayout = () => {
           Go Back
         </div>
         <div className={styles.rowContainer}>
-          <img src={product.categoryImage.desktop} />
+          <img
+            src={
+              isDesktop
+                ? product.image.desktop
+                : isTablet
+                ? product.image.tablet
+                : product.image.mobile
+            }
+          />
           <div className={styles.categoryProductInfo}>
             {product.new && <p className={styles.newProduct}>New Product</p>}
             <h2 className={styles.productName}>{product.name}</h2>
@@ -103,7 +111,6 @@ const ProductDetailLayout = () => {
             </div>
           </div>
         </div>
-        <ImageGallery product={product} />
         <OtherProducts product={product} />
         <CategoryCards />
         <BestAudioGear />
