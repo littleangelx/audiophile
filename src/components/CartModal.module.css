@@ -1,0 +1,92 @@
+.modal {
+  width: 24rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 12rem;
+  left: calc(100vw - 34rem);
+  padding: 1.5rem;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cartHeader > h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1.29px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.cartHeader > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.quantityContainer {
+  width: 6rem;
+  height: 2rem;
+  background-color: #f1f1f1;
+  display: flex;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 2rem;
+}
+
+.plusMinus {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #000;
+  opacity: 0.25;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.totalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.totalContainer p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.totalContainer h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}

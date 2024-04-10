@@ -1,0 +1,143 @@
+.productDetailContainer {
+  padding-top: 5rem;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 8rem;
+  gap: 7rem;
+}
+
+.rowContainer img {
+  width: 35rem;
+  height: 35rem;
+}
+
+.newProduct {
+  font-size: 0.8175rem;
+  letter-spacing: 10px;
+  color: #d87d4a;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 1.43px;
+  line-height: 2.7rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.productDescription {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1.29px;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+
+.cartContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.quantityContainer {
+  width: 7.5rem;
+  height: 3rem;
+  background-color: #f1f1f1;
+  display: flex;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 2rem;
+}
+
+.plusMinus {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #000;
+  opacity: 0.25;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.moreProductInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8rem;
+}
+
+.features {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features h3,
+.inTheBox h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: 1.14px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.features p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.5;
+  white-space: pre-wrap;
+}
+
+.inTheBox {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.whatsInTheBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quantityInTheBox {
+  font-weight: bold !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #d87d4a;
+  margin-right: 1rem;
+}

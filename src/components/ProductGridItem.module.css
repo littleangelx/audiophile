@@ -15,7 +15,7 @@
 
 .productGridItem > img {
   height: 14rem;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1;
   position: relative;
   top: -5rem;
 }
@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  cursor: pointer;
 }
 
 .shop p {

@@ -1,0 +1,30 @@
+.categoryName {
+  width: 100vw;
+  height: 12rem;
+  position: relative;
+  left: -10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 1223px) {
+  .categoryName {
+    left: -2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .categoryName {
+    height: 8rem;
+    left: -1.5rem;
+    font-size: 1.8rem;
+  }
+}

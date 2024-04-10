@@ -1,0 +1,42 @@
+.otherProductsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 10rem;
+  align-items: center;
+}
+
+.otherProductsContainer h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: 1.14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.otherProducts {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.otherProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.otherProduct img {
+  width: 22rem;
+}
+
+.otherProduct h4 {
+  font-size: 1.5rem;
+  letter-spacing: 1.71px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}

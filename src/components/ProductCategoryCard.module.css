@@ -1,0 +1,39 @@
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  gap: 7rem;
+}
+
+.rowContainer img {
+  width: 35rem;
+  height: 35rem;
+}
+
+.newProduct {
+  font-size: 0.8175rem;
+  letter-spacing: 10px;
+  color: #d87d4a;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 1.43px;
+  line-height: 2.7rem;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.productDescription {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}

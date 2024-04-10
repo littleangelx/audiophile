@@ -1,0 +1,11 @@
+.galleryImages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.galleryImages img {
+  border: none;
+  border-radius: 0.5rem;
+}
