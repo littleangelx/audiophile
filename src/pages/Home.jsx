@@ -29,7 +29,7 @@ const Home = () => {
             : isTablet
             ? 'url("/assets/home/tablet/image-header.jpg")'
             : 'url("/assets/home/mobile/image-header.jpg")',
-          width: isDesktop ? "98.5dvw" : "100dvw",
+          width: "100dvw",
           left: isDesktop ? "-10rem" : isTablet ? "-2rem" : "-1.5rem",
           paddingLeft: isDesktop ? "10rem" : "0",
           alignItems: "center",

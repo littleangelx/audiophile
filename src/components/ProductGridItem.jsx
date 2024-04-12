@@ -15,11 +15,7 @@ const ProductGridItem = ({ isMenu, image, title }) => {
       style={{ height: isMobile && isMenu ? "10rem" : "13rem" }}
     >
       <div className={styles.productGridItem}>
-        <img
-          src={image}
-          alt="Product image"
-          style={{ width: isMobile && isMenu ? "70%" : "100%" }}
-        />
+        <img src={image} alt="Product image" />
         <p>{title}</p>
         <div
           className={styles.shop}

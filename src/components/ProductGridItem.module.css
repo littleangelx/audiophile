@@ -15,7 +15,8 @@
 
 .productGridItem > img {
   position: relative;
-  top: -5rem;
+  width: 9rem;
+  top: -4rem;
 }
 
 .productGridItem > p {
@@ -24,17 +25,17 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   position: relative;
-  top: -7rem;
   margin-bottom: 1.5rem;
+  top: -4rem;
 }
 
 .shop {
   position: relative;
-  top: -7rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   cursor: pointer;
+  top: -4rem;
 }
 
 .shop p {
